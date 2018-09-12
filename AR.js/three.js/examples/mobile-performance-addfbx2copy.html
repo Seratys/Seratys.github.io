@@ -194,7 +194,11 @@
         arWorldRoot.add( mesh ); //instead of adding mesh to the scene right away we add only when the target is detected
         //end icosphere code
         ///////////////////////////////////////////////////////////
-        
+        geometry = new THREE.IcosahedronGeometry(150, 1);
+        material = new THREE.MeshBasicMaterial({shading: THREE.FlatShading, color: 0xdcdcdc});
+        mesh = new THREE.Mesh(geometry, material);
+        scene.add(mesh);
+
         
         ///////////////////////////////////////////////////////////
 //        // add a taurus with rotation animation
